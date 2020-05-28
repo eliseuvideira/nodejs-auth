@@ -1,4 +1,4 @@
-FROM node:14
+FROM node:14-alpine
 
 ENV PORT=8080
 
@@ -14,4 +14,4 @@ RUN yarn build
 
 EXPOSE $PORT
 
-CMD [ "yarn", "start"]
+CMD [ "yarn", "start" ]

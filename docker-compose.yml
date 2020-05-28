@@ -6,7 +6,6 @@ networks:
 services:
   api:
     build: '.'
-    container_name: '${CONTAINER_NAME}'
     ports:
       - '${PORT}:${PORT}'
     networks:
