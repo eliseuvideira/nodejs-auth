@@ -14,8 +14,8 @@ router.post('/change-password');
 
 router.post('/verify-email');
 
-router.post('/token/refresh');
+router.post('/auth/refresh-token');
 
-router.post('/token/access');
+router.post('/auth/access-token');
 
 export default router;

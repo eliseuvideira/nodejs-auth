@@ -7,11 +7,13 @@ import { notFound, exception } from './middlewares/errors';
 import morgan from 'morgan';
 import helmet from 'helmet';
 import compression from 'compression';
+import cookieParser from 'cookie-parser';
 
 const app = express();
 
 app.use(cors());
 app.use(json());
+app.use(cookieParser());
 app.use(morgan('combined'));
 app.use(helmet());
 app.use(compression());
