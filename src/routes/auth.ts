@@ -2,6 +2,20 @@ import { Router } from 'express';
 
 const router = Router();
 
-router.get('/', (_req, _res, next) => next());
+router.post('/signin');
+
+router.post('/signout');
+
+router.post('/signup');
+
+router.post('/reset-password');
+
+router.post('/change-password');
+
+router.post('/verify-email');
+
+router.post('/token/refresh');
+
+router.post('/token/access');
 
 export default router;
