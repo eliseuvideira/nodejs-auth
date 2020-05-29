@@ -14,3 +14,9 @@ services:
     environment:
       - 'NODE_ENV=production'
       - 'PORT=${PORT}'
+
+  database:
+    image: mongo:latest
+    ports:
+      - '27017:27017'
+    restart: 'always'
